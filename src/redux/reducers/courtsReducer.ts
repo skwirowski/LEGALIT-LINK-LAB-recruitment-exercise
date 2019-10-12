@@ -1,5 +1,5 @@
 import types from 'redux/reduxTypes';
-import { CourtsState, CourtsAction } from 'redux/ts/courtsTypes';
+import { CourtsState, CourtsAction } from 'static/ts/courtsTypes';
 
 const INITIAL_STATE: CourtsState = {
   courtsLoading: false,
@@ -10,7 +10,7 @@ const INITIAL_STATE: CourtsState = {
     results: []
   },
   error: '',
-}
+};
 
 const reducer = (state = INITIAL_STATE, action: CourtsAction): CourtsState => {
   switch (action.type) {

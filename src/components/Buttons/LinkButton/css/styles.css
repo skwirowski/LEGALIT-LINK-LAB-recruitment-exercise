@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+.main-boundary-wrapper {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-top: 30px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.link-button {
+  height: 50px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #121212;
+  background-color: #03DAC5;
+  padding: 0 20px;
+}

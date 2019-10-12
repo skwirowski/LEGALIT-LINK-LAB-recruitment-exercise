@@ -1,5 +1,5 @@
 import types from 'redux/reduxTypes';
-import { SchoolsState, SchoolsAction } from 'redux/ts/schoolsTypes';
+import { SchoolsState, SchoolsAction } from 'static/ts/schoolsTypes';
 
 const INITIAL_STATE: SchoolsState = {
   schoolsLoading: false,

@@ -1,5 +1,5 @@
 import types from 'redux/reduxTypes';
-import { SchoolsState } from 'redux/ts/schoolsTypes';
+import { SchoolsState } from 'static/ts/schoolsTypes';
 
 const requestSchoolsFetch = () => ({
   type: types.SCHOOLS_FETCH_REQUESTED,

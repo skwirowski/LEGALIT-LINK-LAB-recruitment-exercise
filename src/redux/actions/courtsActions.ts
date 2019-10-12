@@ -1,5 +1,5 @@
 import types from 'redux/reduxTypes';
-import { CourtsState } from 'redux/ts/courtsTypes';
+import { CourtsState } from 'static/ts/courtsTypes';
 
 const requestCourtsFetch = () => ({
   type: types.COURTS_FETCH_REQUESTED,

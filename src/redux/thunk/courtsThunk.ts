@@ -2,9 +2,10 @@ import { Action } from 'redux';
 import { ThunkAction } from 'redux-thunk';
 
 import { AppState } from 'redux/reducers';
-import { courtsURL } from 'static/api';
 import types from 'redux/reduxTypes';
 import courtsActions from 'redux/actions/courtsActions';
+import { courtsURL } from 'static/api';
+import fetchDataRequest from 'static/services';
 
 const fetchCourts = (): ThunkAction<void, AppState, null, Action<string>> => {
   const { resolveCourtsFetch, errorCourtsFetch } = courtsActions;
@@ -13,7 +14,7 @@ const fetchCourts = (): ThunkAction<void, AppState, null, Action<string>> => {
     dispatch({ type: types.COURTS_FETCH_REQUESTED });
 
     try {
-      const response = await fetch(courtsURL);
+      const response = await fetchDataRequest(courtsURL, '');
 
       if (response.ok) {
         const payload = await response.json();
