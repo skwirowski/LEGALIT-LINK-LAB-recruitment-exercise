@@ -1,10 +1,70 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
-.main-boundary-wrapper {
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-top: 30px;
-  margin-right: auto;
-  margin-left: auto;
+.anchor-link-mix {
+  font-size: 14px;
+  text-decoration: none;
+  color: #03DAC5;
+  border-bottom: solid 1px transparent;
+  transition: all 500ms ease;
+  cursor: pointer;
+  word-break: break-all;
+}
+.anchor-link-mix:hover {
+  color: #03c1ae;
+  border-bottom-color: #03c1ae;
+  transition: all 500ms ease;
+}
+.anchor-link-mix:active {
+  color: #028f81;
+  border-bottom-color: transparent;
+  transition: all 500ms ease;
+}
+.table-mix {
+  text-align: left;
+  border-collapse: collapse;
+  box-sizing: border-box;
+}
+.table-mix thead {
+  background-color: rgba(187, 134, 252, 0.4);
+}
+.table-mix thead th {
+  white-space: nowrap;
+  padding: 10px 5px;
+}
+.table-mix tbody th {
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.6);
+  padding: 5px;
+}
+.table-mix tbody .table-link__anchor {
+  font-size: 14px;
+  text-decoration: none;
+  color: #03DAC5;
+  border-bottom: solid 1px transparent;
+  transition: all 500ms ease;
+  cursor: pointer;
+  word-break: break-all;
+}
+.table-mix tbody .table-link__anchor:hover {
+  color: #03c1ae;
+  border-bottom-color: #03c1ae;
+  transition: all 500ms ease;
+}
+.table-mix tbody .table-link__anchor:active {
+  color: #028f81;
+  border-bottom-color: transparent;
+  transition: all 500ms ease;
+}
+.table-mix tr {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+.table-mix tr:nth-child(2n) {
+  background-color: #121212;
+}
+.table-mix table,
+.table-mix th,
+.table-mix td {
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-sizing: border-box;
 }
 .link-button {
   height: 50px;
@@ -17,5 +77,14 @@
   text-decoration: none;
   color: #121212;
   background-color: #03DAC5;
+  transition: background-color 500ms ease;
   padding: 0 20px;
+}
+.link-button:hover {
+  background-color: #02a898;
+  transition: background-color 500ms ease;
+}
+.link-button:active {
+  background-color: #02756a;
+  transition: background-color 500ms ease;
 }

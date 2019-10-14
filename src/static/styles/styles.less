@@ -5,6 +5,7 @@ body {
   font-weight: @primary-font-weight-regular;
   color: @high-emphasis-text-color;
   background-color: @background-surface;
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
@@ -27,4 +28,100 @@ mark {
   font-weight: @primary-font-weight-bold;
   background-color: fade(@primary-color, 80%);
   padding: 0.2rem;
+}
+
+.main-boundary-wrapper {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-top: 30px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @media (min-width: @break-point-small) {
+    max-width: @break-point-small;
+  }
+
+  @media (min-width: @break-point-medium) {
+    max-width: @break-point-medium;
+  }
+
+  @media (min-width: @break-point-large) {
+    max-width: @break-point-large;
+  }
+
+  @media (min-width: @break-point-extraLarge) {
+    max-width: @break-point-extraLarge;
+  }
+}
+
+.pagination {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 14px;
+  list-style: none;
+  padding: 0;
+  margin-top: 30px;
+  margin-bottom: 20px;
+
+  li {
+    background-color: fade(#ffffff, 5%);
+    border: 1px solid fade(#ffffff, 12%);
+    color: @medium-emphasis-text-color;
+    cursor: pointer;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    transition: all 500ms ease;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:hover {
+      background-color: fade(#ffffff, 12%);
+      transition: all 500ms ease;
+    }
+
+    &:active {
+      background-color: transparent;
+      transition: all 500ms ease;
+    }
+
+    a {
+      display: block;
+      line-height: 0.8;
+      padding: 10px;
+    }
+  }
+
+  .disabled {
+    color: @disabled-text-color;
+    background-color: @background-surface;
+    cursor: default;
+
+    &:hover {
+      background-color: @background-surface;
+    }
+
+    &:active {
+      background-color: @background-surface;
+    }
+  }
+
+  .active {
+    background-color: fade(@primary-color, 40%);
+    color: @high-emphasis-text-color;
+    transition: all 500ms ease;
+
+    &:hover {
+      background-color: fade(@primary-color, 30%);
+      transition: all 500ms ease;
+    }
+
+    &:active {
+      background-color: fade(@primary-color, 20%);
+      transition: all 500ms ease;
+    }
+  }
 }

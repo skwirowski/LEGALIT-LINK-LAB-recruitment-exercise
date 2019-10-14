@@ -1,0 +1,46 @@
+@import '../../../static/styles/settings.less';
+
+.courts-page {
+  &__home-button {
+    margin-bottom: 15px;
+  }
+
+  &__table-wrapper {
+    overflow-x: auto;
+  }
+
+  &__table {
+    .table-mix();
+
+    .table-loader {
+      position: relative;
+      padding-top: 300px;
+
+      &__roller {
+        position: fixed;
+        top: 50%;
+        left: ~'calc(50% - 32px)';
+      }
+    }
+
+    .table-full-name {
+      min-width: 180px;
+    }
+
+    .table-short-name {
+      min-width: 180px;
+    }
+
+    .table-link {
+      min-width: 250px;
+    }
+
+    .table-date-modified {
+      min-width: 250px;
+    }
+
+    .table-start_date {
+      min-width: 100px;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+@import '../../../static/styles/settings.less';
+
+.schools-page {
+  &__home-button {
+    margin-bottom: 15px;
+  }
+
+  &__table-wrapper {
+    overflow-x: auto;
+  }
+
+  &__table {
+    .table-mix();
+
+    .table-loader {
+      position: relative;
+      padding-top: 300px;
+
+      &__roller {
+        position: fixed;
+        top: 50%;
+        left: ~'calc(50% - 32px)';
+      }
+    }
+
+    .table-name {
+      min-width: 200px;
+    }
+
+    .table-link {
+      min-width: 250px;
+    }
+
+    .table-date_created,
+    .table-date_modified {
+      min-width: 250px;
+    }
+  }
+}

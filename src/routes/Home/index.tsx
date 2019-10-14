@@ -7,8 +7,8 @@ import './css/styles.css';
 const Home: React.FC = () => {
   return (
     <section className='home'>
-      <h1>Hello</h1>
-      <div className="home__section-wrapper">
+      <h1>Hello!</h1>
+      <div className='home__section-wrapper'>
         <p>
           If you'd like to display <mark>Courts list</mark> click button below.
         </p>
@@ -18,7 +18,7 @@ const Home: React.FC = () => {
           content='Show courts list'
         />
       </div>
-      <div className="home__section-wrapper">
+      <div className='home__section-wrapper'>
         <p>
           If you'd like to display <mark>Schools list</mark> click button below.
         </p>

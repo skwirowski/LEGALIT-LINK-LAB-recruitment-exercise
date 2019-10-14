@@ -1,16 +1,77 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
-.main-boundary-wrapper {
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-top: 30px;
-  margin-right: auto;
-  margin-left: auto;
+.anchor-link-mix {
+  font-size: 14px;
+  text-decoration: none;
+  color: #03DAC5;
+  border-bottom: solid 1px transparent;
+  transition: all 500ms ease;
+  cursor: pointer;
+  word-break: break-all;
+}
+.anchor-link-mix:hover {
+  color: #03c1ae;
+  border-bottom-color: #03c1ae;
+  transition: all 500ms ease;
+}
+.anchor-link-mix:active {
+  color: #028f81;
+  border-bottom-color: transparent;
+  transition: all 500ms ease;
+}
+.table-mix {
+  text-align: left;
+  border-collapse: collapse;
+  box-sizing: border-box;
+}
+.table-mix thead {
+  background-color: rgba(187, 134, 252, 0.4);
+}
+.table-mix thead th {
+  white-space: nowrap;
+  padding: 10px 5px;
+}
+.table-mix tbody th {
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.6);
+  padding: 5px;
+}
+.table-mix tbody .table-link__anchor {
+  font-size: 14px;
+  text-decoration: none;
+  color: #03DAC5;
+  border-bottom: solid 1px transparent;
+  transition: all 500ms ease;
+  cursor: pointer;
+  word-break: break-all;
+}
+.table-mix tbody .table-link__anchor:hover {
+  color: #03c1ae;
+  border-bottom-color: #03c1ae;
+  transition: all 500ms ease;
+}
+.table-mix tbody .table-link__anchor:active {
+  color: #028f81;
+  border-bottom-color: transparent;
+  transition: all 500ms ease;
+}
+.table-mix tr {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+.table-mix tr:nth-child(2n) {
+  background-color: #121212;
+}
+.table-mix table,
+.table-mix th,
+.table-mix td {
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-sizing: border-box;
 }
 body {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.87);
   background-color: #121212;
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
@@ -30,4 +91,91 @@ mark {
   font-weight: 700;
   background-color: rgba(187, 134, 252, 0.8);
   padding: 0.2rem;
+}
+.main-boundary-wrapper {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-top: 30px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 576px) {
+  .main-boundary-wrapper {
+    max-width: 576px;
+  }
+}
+@media (min-width: 768px) {
+  .main-boundary-wrapper {
+    max-width: 768px;
+  }
+}
+@media (min-width: 992px) {
+  .main-boundary-wrapper {
+    max-width: 992px;
+  }
+}
+@media (min-width: 1200px) {
+  .main-boundary-wrapper {
+    max-width: 1200px;
+  }
+}
+.pagination {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 14px;
+  list-style: none;
+  padding: 0;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.pagination li {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+  margin-left: 5px;
+  margin-bottom: 10px;
+  transition: all 500ms ease;
+}
+.pagination li:first-child {
+  margin-left: 0;
+}
+.pagination li:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+  transition: all 500ms ease;
+}
+.pagination li:active {
+  background-color: transparent;
+  transition: all 500ms ease;
+}
+.pagination li a {
+  display: block;
+  line-height: 0.8;
+  padding: 10px;
+}
+.pagination .disabled {
+  color: rgba(255, 255, 255, 0.38);
+  background-color: #121212;
+  cursor: default;
+}
+.pagination .disabled:hover {
+  background-color: #121212;
+}
+.pagination .disabled:active {
+  background-color: #121212;
+}
+.pagination .active {
+  background-color: rgba(187, 134, 252, 0.4);
+  color: rgba(255, 255, 255, 0.87);
+  transition: all 500ms ease;
+}
+.pagination .active:hover {
+  background-color: rgba(187, 134, 252, 0.3);
+  transition: all 500ms ease;
+}
+.pagination .active:active {
+  background-color: rgba(187, 134, 252, 0.2);
+  transition: all 500ms ease;
 }

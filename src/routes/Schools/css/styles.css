@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+.anchor-link-mix {
+  font-size: 14px;
+  text-decoration: none;
+  color: #03DAC5;
+  border-bottom: solid 1px transparent;
+  transition: all 500ms ease;
+  cursor: pointer;
+  word-break: break-all;
+}
+.anchor-link-mix:hover {
+  color: #03c1ae;
+  border-bottom-color: #03c1ae;
+  transition: all 500ms ease;
+}
+.anchor-link-mix:active {
+  color: #028f81;
+  border-bottom-color: transparent;
+  transition: all 500ms ease;
+}
+.table-mix {
+  text-align: left;
+  border-collapse: collapse;
+  box-sizing: border-box;
+}
+.table-mix thead {
+  background-color: rgba(187, 134, 252, 0.4);
+}
+.table-mix thead th {
+  white-space: nowrap;
+  padding: 10px 5px;
+}
+.table-mix tbody th {
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.6);
+  padding: 5px;
+}
+.table-mix tbody .table-link__anchor {
+  font-size: 14px;
+  text-decoration: none;
+  color: #03DAC5;
+  border-bottom: solid 1px transparent;
+  transition: all 500ms ease;
+  cursor: pointer;
+  word-break: break-all;
+}
+.table-mix tbody .table-link__anchor:hover {
+  color: #03c1ae;
+  border-bottom-color: #03c1ae;
+  transition: all 500ms ease;
+}
+.table-mix tbody .table-link__anchor:active {
+  color: #028f81;
+  border-bottom-color: transparent;
+  transition: all 500ms ease;
+}
+.table-mix tr {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+.table-mix tr:nth-child(2n) {
+  background-color: #121212;
+}
+.table-mix table,
+.table-mix th,
+.table-mix td {
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-sizing: border-box;
+}
+.schools-page__home-button {
+  margin-bottom: 15px;
+}
+.schools-page__table-wrapper {
+  overflow-x: auto;
+}
+.schools-page__table {
+  text-align: left;
+  border-collapse: collapse;
+  box-sizing: border-box;
+}
+.schools-page__table thead {
+  background-color: rgba(187, 134, 252, 0.4);
+}
+.schools-page__table thead th {
+  white-space: nowrap;
+  padding: 10px 5px;
+}
+.schools-page__table tbody th {
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.6);
+  padding: 5px;
+}
+.schools-page__table tbody .table-link__anchor {
+  font-size: 14px;
+  text-decoration: none;
+  color: #03DAC5;
+  border-bottom: solid 1px transparent;
+  transition: all 500ms ease;
+  cursor: pointer;
+  word-break: break-all;
+}
+.schools-page__table tbody .table-link__anchor:hover {
+  color: #03c1ae;
+  border-bottom-color: #03c1ae;
+  transition: all 500ms ease;
+}
+.schools-page__table tbody .table-link__anchor:active {
+  color: #028f81;
+  border-bottom-color: transparent;
+  transition: all 500ms ease;
+}
+.schools-page__table tr {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+.schools-page__table tr:nth-child(2n) {
+  background-color: #121212;
+}
+.schools-page__table table,
+.schools-page__table th,
+.schools-page__table td {
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-sizing: border-box;
+}
+.schools-page__table .table-loader {
+  position: relative;
+  padding-top: 300px;
+}
+.schools-page__table .table-loader__roller {
+  position: fixed;
+  top: 50%;
+  left: calc(50% - 32px);
+}
+.schools-page__table .table-name {
+  min-width: 200px;
+}
+.schools-page__table .table-link {
+  min-width: 250px;
+}
+.schools-page__table .table-date_created,
+.schools-page__table .table-date_modified {
+  min-width: 250px;
+}

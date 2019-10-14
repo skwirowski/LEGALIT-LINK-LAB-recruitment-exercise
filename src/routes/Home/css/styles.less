@@ -1,5 +1,15 @@
+@import '../../../static/styles/settings.less';
+
 .home {
+  max-width: 300px;
+  margin-right: auto;
+  margin-left: auto;
+
   &__section-wrapper {
     margin-bottom: 45px;
+  }
+
+  @media (min-width: @break-point-small) {
+    max-width: none;
   }
 }

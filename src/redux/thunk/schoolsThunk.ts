@@ -4,17 +4,17 @@ import { ThunkAction } from 'redux-thunk';
 import { AppState } from 'redux/reducers';
 import types from 'redux/reduxTypes';
 import schoolsActions from 'redux/actions/schoolsActions';
-import { schoolsURL } from 'static/api';
 import fetchDataRequest from 'static/services';
+import { schoolsURL } from 'static/api';
 
-const fetchSchools = (): ThunkAction<void, AppState, null, Action<string>> => {
+const fetchSchools = (query: string): ThunkAction<void, AppState, null, Action<string>> => {
   const { resolveSchoolsFetch, errorSchoolsFetch } = schoolsActions;
 
   return async (dispatch) => {
     dispatch({ type: types.SCHOOLS_FETCH_REQUESTED });
 
     try {
-      const response = await fetchDataRequest(schoolsURL, '');
+      const response = await fetchDataRequest(schoolsURL, query);
 
       if (response.ok) {
         const payload = await response.json();

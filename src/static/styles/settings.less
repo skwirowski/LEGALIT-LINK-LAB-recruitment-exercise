@@ -12,10 +12,73 @@
 @primary-color: #BB86FC;
 @secondary-color: #03DAC5;
 
-.main-boundary-wrapper {
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-top: 30px;
-  margin-right: auto;
-  margin-left: auto;
+@break-point-small: 576px;
+@break-point-medium: 768px;
+@break-point-large: 992px;
+@break-point-extraLarge: 1200px;
+
+.anchor-link-mix {
+  font-size: 14px;
+  text-decoration: none;
+  color: @secondary-color;
+  border-bottom: solid 1px transparent;
+  transition: all 500ms ease;
+  cursor: pointer;
+  word-break: break-all;
+
+  &:hover {
+    color: darken(@secondary-color, 5%);
+    border-bottom-color: darken(@secondary-color, 5%);
+    transition: all 500ms ease;
+  }
+
+  &:active {
+    color: darken(@secondary-color, 15%);
+    border-bottom-color: transparent;
+    transition: all 500ms ease;
+  }
+}
+
+.table-mix {
+  text-align: left;
+  border-collapse: collapse;
+  box-sizing: border-box;
+
+  thead {
+    background-color: fade(@primary-color, 40%);
+
+    th {
+      white-space: nowrap;
+      padding: 10px 5px;
+    }
+  }
+
+  tbody {
+    th {
+      font-weight: @primary-font-weight-regular;
+      color: @medium-emphasis-text-color;
+      padding: 5px;
+    }
+
+    .table-link {
+      &__anchor {
+        .anchor-link-mix();
+      }
+    }
+  }
+
+  tr {
+    background-color: fade(#ffffff, 5%);
+
+    &:nth-child(2n) {
+      background-color: @background-surface;
+    }
+  }
+
+  table,
+  th,
+  td {
+    border: 1px solid fade(#ffffff, 5%);
+    box-sizing: border-box;
+  }
 }

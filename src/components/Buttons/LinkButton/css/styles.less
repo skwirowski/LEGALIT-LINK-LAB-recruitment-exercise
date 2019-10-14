@@ -11,5 +11,16 @@
   text-decoration: none;
   color: @background-surface;
   background-color: @secondary-color;
+  transition: background-color 500ms ease;
   padding: 0 20px;
+
+  &:hover {
+    background-color: darken(@secondary-color, 10%);
+    transition: background-color 500ms ease;
+  }
+
+  &:active {
+    background-color: darken(@secondary-color, 20%);
+    transition: background-color 500ms ease;
+  }
 }
